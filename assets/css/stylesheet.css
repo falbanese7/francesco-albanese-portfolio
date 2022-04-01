@@ -2,19 +2,25 @@
     margin: 0;
 }
 
+:root {
+    --white: white;
+    --dark: #282a35;
+    --blue: blue;
+    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 body {
-    background-color: #a2e1e9;
-    margin: 0 auto;
+    background-color: var(--white);
 }
 
 header {
     display: flex;
-    width: 100%;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: calc(100% - 30px);
+    font-family: var(--font-family);
     justify-content: space-between;
     padding: 15px;
-    background-color: #335f9e;
-    color: white;
+    background-color: #282a35;
+    color: var(--white);
     align-items: center;
 }
 
@@ -23,12 +29,21 @@ h1 {
 }
 
 h2 {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--dark);
+    font-family: var(--font-family);
     margin-bottom: 10px;
 }
   
 p {
     margin: 15px;
+    text-align: center;
+    font-family: var(--font-family);
+}
+
+.align-center {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
 }
 
 nav ul{
@@ -40,50 +55,50 @@ nav ul{
 li {
     padding: 10px;
     color: white;
+    list-style: none;
 }
 
-a:link {
-    color: white;
+header a:link {
+    color: var(--white);
 }
 
-a:visited {
-    color: white;
+header a:visited {
+    color: var(--white);
 }
 
-a:hover {
-    color: cyan
+header a:hover {
+    color: #145b6d
 }
 
-a:active {
-    color: blue
+header a:active {
+    color: var(--blue)
 }
 
-.about {
+.about, .education, .contact{
     display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.projects {
+    display: flex;
+    position: relative;
+    text-align: center;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     padding: 20px;
 }
 
-.education {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
+.projects h2 {
+    margin-bottom: 35px;
 }
 
-.projects {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
 
-.contact {
-    display: flex;
-    justify-content: center;
-}
-
-img {
+#profile-image {
     max-width: 100%;
     max-height: 100%;
     border-radius: 50%;
@@ -92,30 +107,202 @@ img {
 .hotdog {
     width: 200px;
     height: 200px;
+    transition: transform .2s;
 
 }
 
 .hotdog:hover {
-    box-shadow: inset 0px 0px 8px white, 0 0 15px white;
+    box-shadow: inset 0px 0px 8px gray, 0 0 15px gray;
     border-radius: 50%;
     border: 0;
+    transform: scale(1.5);
  }
+
+ .horiseon {
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    transition: transform .2s;
+ }
+
+ #horiseon-image {
+    width: 1000px;
+    border-radius: 25px;
+    border: 10px;
+    border-style: solid;
+    border-color: var(--dark);
+    
+ }
+
+ #horiseon-caption {
+    position: absolute;
+    bottom: 0%;
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: x-large;
+    background-color: var(--dark);
+    padding: 20px;
+    border-radius: 5px 5px 10px 5px;
+    color: var(--white);
+   
+}
+
+.horiseon:hover {
+    box-shadow: inset 0px 0px 8px gray, 0 0 15px gray;
+    border-radius: 25px;
+    transform: scale(1.2);
+}
+
+h3 {
+    font-family: var(--font-family);
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.coming-soon {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: transform .2s;
+}
+
+#coming-soon-image {
+    width: 250px;
+    margin: 30px;
+    border-radius: 25px;
+    border: 10px;
+    border-style: solid;
+    border-color: var(--dark);
+    opacity: 1;
+    transition: transform .2s;
+}
+
+#coming-soon-image:hover {
+    box-shadow: inset 0px 0px 8px gray, 0 0 15px gray;
+    border-radius: 25px;
+    transform: scale(1.2);
+}
 
 #container {
     position: relative;
     min-height: 100vh;
 }
 
+.contact ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 0px;
+}
+
+.contact a {
+    color: var(--blue);
+}
+
+
+ion-icon {
+    font-size: xx-large;
+    color: var(--dark);
+}
 footer {
     display: flex;
-    position: absolute;
     bottom: 0;
-    height: 2.5rem;
-    background-color: #335f9e;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    width: 100%;
-    color: white;
-    padding: 15px;
+    height: 75px;
+    background-color: var(--dark);
+    font-family: var(--font-family);
+    color: var(--white);
     justify-content: center;
     align-items: center;
+}
+
+#heart {
+    font-family: var(--font-family);
+}
+
+@media screen and (max-width: 1536px) {
+    #horiseon-image {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+    #horiseon-caption {
+        font-size: 100%;
+    }
+    .coming-soon {
+        max-width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    p {
+        line-height: 2rem;
+    }
+  }
+
+@media screen and (max-width: 992px) {
+    #horiseon-image {
+        max-width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+     #horiseon-caption {
+        font-size: 90%;
+    }
+    .coming-soon {
+        max-width: 90%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    p {
+        line-height: 2rem;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+    #horiseon-image {
+        max-width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     } 
+     #horiseon-caption {
+        font-size: 85%;
+    }
+    .coming-soon {
+        max-width: 90%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    p {
+        line-height: 2rem;
+    }
+  }
+
+@media screen and (max-width: 576px) {
+    #horiseon-image {
+        max-width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }   
+     #horiseon-caption {
+        font-size: 80%;
+    }
+    .coming-soon {
+        max-width: 90%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    p {
+        line-height: 2rem;
+    }
 }
