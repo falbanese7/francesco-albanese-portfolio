@@ -54,7 +54,7 @@ nav ul{
 
 li {
     padding: 10px;
-    color: white;
+    color: var(--white);
     list-style: none;
 }
 
@@ -83,6 +83,7 @@ header a:active {
     
 }
 
+/* Separate from the rest of the sections because the images require additional positioning properties. */
 .projects {
     display: flex;
     position: relative;
@@ -97,13 +98,14 @@ header a:active {
     margin-bottom: 35px;
 }
 
-
+/* Setting the max space the profile image in the about me section can be in. */
 #profile-image {
     max-width: 100%;
     max-height: 100%;
     border-radius: 50%;
 }
 
+/* Resizing the profile image in the about me section. */
 .hotdog {
     width: 200px;
     height: 200px;
@@ -111,6 +113,7 @@ header a:active {
 
 }
 
+/* Allows the image to grow when a cursor hovers over it. */
 .hotdog:hover {
     box-shadow: inset 0px 0px 8px gray, 0 0 15px gray;
     border-radius: 50%;
@@ -128,8 +131,8 @@ header a:active {
 
  #horiseon-image {
     width: 1000px;
-    border-radius: 25px;
-    border: 10px;
+    border-radius: 20px;
+    border: 15px;
     border-style: solid;
     border-color: var(--dark);
     
@@ -142,12 +145,14 @@ header a:active {
     font-family: var(--font-family);
     font-size: x-large;
     background-color: var(--dark);
-    padding: 20px;
-    border-radius: 5px 5px 10px 5px;
+    border-radius: 5px 5px 5px 5px;
     color: var(--white);
+    padding: 15px;
+    margin: 10px;
    
 }
 
+/* The image will grow when a cursor hovers over it. */
 .horiseon:hover {
     box-shadow: inset 0px 0px 8px gray, 0 0 15px gray;
     border-radius: 25px;
@@ -174,7 +179,6 @@ h3 {
     border: 10px;
     border-style: solid;
     border-color: var(--dark);
-    opacity: 1;
     transition: transform .2s;
 }
 
@@ -200,7 +204,7 @@ h3 {
     color: var(--blue);
 }
 
-
+/* Editing the social media icons. */
 ion-icon {
     font-size: xx-large;
     color: var(--dark);
@@ -216,10 +220,12 @@ footer {
     align-items: center;
 }
 
+/* Specific properties for the heart emoji in the footer. */
 #heart {
     font-family: var(--font-family);
 }
 
+/* These selectors will be affected when the screen is at or below 1536px. */
 @media screen and (max-width: 1536px) {
     #horiseon-image {
         max-width: 100%;
@@ -241,6 +247,8 @@ footer {
     }
   }
 
+
+/* These selectors will be affected when the screen is at or below 992px. */
 @media screen and (max-width: 992px) {
     #horiseon-image {
         max-width: 90%;
@@ -263,6 +271,7 @@ footer {
     }
   }
 
+  /* These selectors will be affected when the screen is at or below 768px. */
 @media screen and (max-width: 768px) {
     #horiseon-image {
         max-width: 90%;
@@ -285,6 +294,7 @@ footer {
     }
   }
 
+ /* These selectors will be affected when the screen is at or below 576px. */
 @media screen and (max-width: 576px) {
     #horiseon-image {
         max-width: 90%;
