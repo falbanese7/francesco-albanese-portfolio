@@ -26,3 +26,5 @@ This section contains clickable social media icons. Clicking on the respective i
 ![Screen Shot 2022-04-01 at 10 52 02 PM](https://user-images.githubusercontent.com/98659683/161363081-1d65292a-985d-4090-8b57-dc8ca9367d4b.png)
 
 Thank you for checking out my site! You'll find a direct link to the deployed site below.
+
+URL: https://falbanese96.github.io/francesco-albanese-portfolio/
