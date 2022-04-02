@@ -1,12 +1,12 @@
-// This will set how much time to delay
-const delayThis = 90;
+// This will set how much time to delay in milliseconds.
+const delayThis = 700;
 
 // To identify when a link in the anchor tag is clicked
 document.querySelectorAll('a[href^="#"]').forEach(anchor => { 
     anchor.addEventListener("click",function (e) {
         e.preventDefault();
 
-        // This will allow the page to scroll smoothly
+        // This will allow the page to scroll smoothly.
         document.querySelector(this.getAttribute("href")).scrollIntoView({
             behavior: "smooth"
         });
