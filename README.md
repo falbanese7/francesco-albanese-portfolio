@@ -27,4 +27,4 @@ This section contains clickable social media icons. Clicking on the respective i
 
 Thank you for checking out my site! You'll find a direct link to the deployed site below.
 
-URL: https://falbanese96.github.io/francesco-albanese-portfolio/
+URL: https://falbanese7.github.io/francesco-albanese-portfolio/
