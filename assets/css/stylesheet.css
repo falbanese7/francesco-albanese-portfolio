@@ -244,7 +244,7 @@ pre {
         max-width: 100%;
         display: flex;
         justify-content: center;
-        align-items: baseline
+        align-items: center;
      }
     #featured-project-caption {
         font-size: 100%;
@@ -253,7 +253,7 @@ pre {
         width: fit-content;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: baseline;
     }
     p {
         line-height: 2rem;
