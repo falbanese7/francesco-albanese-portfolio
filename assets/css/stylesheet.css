@@ -125,9 +125,7 @@ header a:active {
  #featured-project-image {
     width: 1000px;
     border-radius: 20px;
-    border: 15px;
-    border-style: solid;
-    border-color: var(--dark);
+    border: solid var(--dark) 10px;
  }
 
  #featured-project-caption {
@@ -140,8 +138,6 @@ header a:active {
     border-radius: 5px 5px 5px 5px;
     color: var(--white);
     padding: 15px;
-    margin: 10px;
-   
 }
 
 /* The image will grow when a cursor hovers over it. */
@@ -306,6 +302,9 @@ pre {
 
  /* These selectors will be affected when the screen is at or below 576px. */
 @media screen and (max-width: 576px) {
+    body {
+        width: fit-content;
+    }
     #featured-project-image {
         width: fit-content;
      }   
