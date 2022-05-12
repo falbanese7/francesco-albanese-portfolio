@@ -1,14 +1,20 @@
 # Francesco Albanese's Portfolio
 
-Welcome to my portfolio! You'll find 4 sections on this site.
+Welcome to my portfolio!
 
-## Header
+A direct link to the deployed site is included below:
 
-There are 4 links to click here: "About Me", "Education & Work", "Projects", and "Contact". Clicking each of these will scroll the page automatically to that section. The URL in your browser's web bar will also display the corresponding section. 
+URL: https://falbanese7.github.io/francesco-albanese-portfolio/
+
+This portfolio site is comprised of 4 sections.
+
+## Navbar
+
+There are 4 links to click here: "About Me", "Education & Work", "Projects", and "Contact". Clicking each of these will scroll the page automatically to that section. The URL in the viewer's browser's web bar will also display the corresponding section. If the viewer is using a mobile device or a monitor below 576px, the menu items will collapse into a clickable button that will be more mobile-friendly.
 
 ## About Me
 
-Brief description of me. The image will expand when your mouse hovers over it. There are no links to click.
+Brief description of me. The image will expand when the viewer's mouse hovers over it. There are no links to click.
 
 ## Education & Work
 
@@ -16,15 +22,19 @@ Short background outlining where I went to school, where I work, and where I'm c
 
 ## Projects
 
-This section contains my current list of applications that are live. Clicking on the first large image will navigate to the application in a new tab. The three images below are not clickable and will not direct you anywhere. They will expand similarly to the other images when your mouse hovers over them.
+This section contains my current list of applications that are live. Clicking on the first large image will navigate to the respective GitHub repository in a new tab. The three images will direct the viewer to the GitHub repositories for each project. They will expand similarly to the other images when your mouse hovers over them.
 
 ## Contact
 
 This section contains clickable social media icons. Clicking on the respective icons will open my profile on each site in a new tab. The email icon will open your default mailbox.
 
+![Screen Shot 2022-05-12 at 3 37 19 AM](https://user-images.githubusercontent.com/98659683/168017369-00199304-7079-453e-a106-4e81ce8d02a6.png)
 
-![Screen Shot 2022-04-01 at 10 52 02 PM](https://user-images.githubusercontent.com/98659683/161363081-1d65292a-985d-4090-8b57-dc8ca9367d4b.png)
+## Technologies Used & Credits
 
-Thank you for checking out my site! You'll find a direct link to the deployed site below.
+- HTML5
+- CSS3
+- Bootstrap
+- JavaScript
 
-URL: https://falbanese7.github.io/francesco-albanese-portfolio/
+Developed by: Francesco Albanese

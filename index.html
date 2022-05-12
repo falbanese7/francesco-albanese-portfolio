@@ -5,68 +5,144 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" /> -->
-    <link rel="stylesheet" type="text/css" href="./assets/css/stylesheet.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/css/stylesheet.css"/>
   </head>
 
   <body>
-    <!-- Header with Navbar -->
-    <header>
-        <h1>Francesco Albanese</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about-me">About Me</a>
-                </li>
-                <li>
-                    <a href="#education">Education & Work</a>
-                </li>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a href="#contact-me">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-     <main> 
-        <!-- About Me -->
-        <section class="about">
-            <h2 id="about-me">About Me</h2>
-            <div class="hotdog">
-                <img id="profile-image" src="./assets/images/Updated.jpg" alt="Fran with hotdog"/>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://falbanese7.github.io/francesco-albanese-portfolio/">Francesco's Developer Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav justify-content-end" id="navbarScroll">
+                <ul class="nav justify-content-end navbar-nav my-2 my-lg-0" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                    <a class="nav-link" href="#about-me">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#education">Education & Work</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#contact-me">Contact</a>
+                    </li>
+                  </ul>
             </div>
-            <div class="align-center">
-                <p>Welcome to my portfolio! My name is Francesco Albanese. I'm an aspiring software developer. </p> <br>
-                <p>Here you'll find a little background about me, my projects, and how to contact me. </p> <br>
-                <p> I'm a big fan of eating, playing video games, hiking, snowboarding, and more than I can't immdiately think of. </p> 
-                
+        </div>
+    </nav>        
+     <main> 
+         <section>
+             <h1 class="welcome-header">Welcome to my portfolio!</h1>
+                <div class="hotdog d-flex justify-content-center">
+                    <img id="profile-image" src="./assets/images/Updated.jpg" alt="Fran with hotdog"/>
+                </div>
+        </section>
+        <!-- About Me -->
+        <section class="about container" id="about-me">
+            <div class="row">
+                <div class="col-md align-items-center section-headers">
+                    <h2>About Me</h2>
+                </div>
+                <div class="col-md d-flex align-items-center left-borders">
+                    <p>My name is Francesco Albanese. I'm an aspiring software developer. Here you'll find a little background about me, my projects, and how to contact me.
+                    I'm a big fan of eating, playing video games, hiking, snowboarding, and more than I can't immdiately think of. </p> 
+                </div>
             </div>
         </section>
         <!-- Education -->
-        <section class="education">
-            <h2 id="education">Education & Work</h2>
-            <div class="align-center">
-                <p>I graduated from Emmanuel College in Boston in 2018 and have a Bacheleor's Degree in Business Management with a concentration in markeitng. </p> <br>
-                <p>Since graduating, I've been at Promoboxx, a Boston-based marketing SaaS platform connecting national brands with their independent retailers. I'm currently working as the manager of the customer support team.</p> <br>
-                <p> I'm currently enrolled in the University of New Hampshire's Coding Bootcamp which I aniticpate to complete by September 2022. </p> 
+        <section class="education container" id="education">
+            <div class="row">
+                <div class="col-md align-items-center section-headers">
+                    <h2>Education & Work</h2>
+                </div>
+                <div class="col-md align-center left-borders">
+                    <p>I graduated from Emmanuel College in Boston in 2018 with a Bacheleor's Degree in Business Management and a concentration in markeitng. 
+                    Since graduating, I've been at Promoboxx, a Boston-based marketing SaaS platform connecting national brands with their independent retailers. 
+                    I began my time as an intern with the customer support team while still in school, and after graduating I was brought on full time as a specialist the customer support team. After two years, I was presented with the opportunity of leading the support team as its manager</p> <br> 
+                    <p> In late 2021 to early 2022, I decided it was time for a change and wanted to explore my interest in software development. So I worked with my team at Promoboxx to finally transition from the customer support team to the software development team as a QA Analyst. With this decision, I also made sure to start building a founddation for my knowledge of the software development field. Consequently, in March of 2022, I began my studies with the University of New Hampshire's Coding Bootcamp. I aniticpate to complete the bootcamp by September 2022. </p> 
+                </div>
             </div>
         </section>
         <!-- Projects -->
-        <section class="projects">
-            <h2 id="projects"> Projects</h2>
-            <figure class="horiseon">
-                <a href="https://falbanese96.github.io/Unit-1-homework-html-css-git-demo/" target="_blank">
-                    <img id="horiseon-image" src="./assets/images/Screen Shot 2022-04-01 at 4.33.10 PM.png" alt="Screenshot of Horiseon website"/>
-                    <figcaption id="horiseon-caption">The Horiseon website</figcaption>
-                </a>
-            </figure>
-                <h3>More Projects Coming Soon</h3>
-                <figure class="coming-soon">
-                    <img id="coming-soon-image" src="./assets/images/alex-motoc-nJqbTOSPt50-unsplash.jpg" alt="Closed sign on storefront"/>
-                    <img id="coming-soon-image" src="./assets/images/alex-motoc-nJqbTOSPt50-unsplash.jpg" alt="Closed sign on storefront"/>
-                    <img id="coming-soon-image" src="./assets/images/alex-motoc-nJqbTOSPt50-unsplash.jpg" alt="Closed sign on storefront"/>
-                </figure>
+        <section class="projects" id="projects">
+            <div class="justify-content-center">
+                <h2>Featured Project</h2>
+                    <div>
+                        <figure class="featured-project">
+                            <a href="https://github.com/falbanese7/movie-refresh" target="_blank">
+                                <img id="featured-project-image" src="./assets/images/167070744-1c5df8d4-aec1-4428-a92d-b1d1fb879794.png" alt="Screenshot of Movie Refresh application"/>
+                                <figcaption id="featured-project-caption">Movie Refresh</figcaption>
+                            </a>
+                        </figure>
+                        <ul class="list-group custom-font">
+                            <li class="list-group-item">HTML5</li>
+                            <li class="list-group-item">CSS3</li>
+                            <li class="list-group-item">Bulma</li>
+                            <li class="list-group-item">JavaScript</li>
+                            <li class="list-group-item">YouTube Data API</li>
+                            <li class="list-group-item">The Movie Database API</li>
+                          </ul>
+                    </div>
+            </div>
+                <h3>Additional Projects</h3>
+                    <figure class="additional-projects">
+                        <div>
+                            <a href="https://github.com/falbanese7/fran-albanese-weather-dashboard" target="_blank" class="link-dark">
+                                <div class="align-center">
+                                    <img id="additional-projects-image" src="./assets/images/Screen Shot 2022-05-12 at 1.10.48 AM.png" alt="Screenshot of Weather Dashboard Application"/>
+                                    <figcaption id="additional-projects-caption">Weather Dashboard</figcaption>
+                                </div>
+                            </a>
+                            <ul class="list-group custom-font">
+                                <li class="list-group-item">HTML5</li>
+                                <li class="list-group-item">CSS3</li>
+                                <li class="list-group-item">Bootstrap</li>
+                                <li class="list-group-item">Google Fonts</li>
+                                <li class="list-group-item">JavaScript</li>
+                                <li class="list-group-item">JQuery</li>
+                                <li class="list-group-item">Moment.js</li>
+                              </ul>
+                        </div>
+                        <div>
+                            <a href="https://github.com/falbanese7/fran-albanese-day-planner" target="_blank" class="link-dark">
+                                <div class="align-center">
+                                    <img id="additional-projects-image" src="./assets/images/164610928-806c920b-26eb-446f-94b7-918a4de17573.png" alt="Screenshot of Weather Dashboard Application"/>
+                                    <figcaption id="additional-projects-caption">Work Day Scheduler</figcaption>
+                                </div>
+                            </a>
+                            <ul class="list-group custom-font">
+                                <li class="list-group-item">HTML5</li>
+                                <li class="list-group-item">CSS3</li>
+                                <li class="list-group-item">Bootstrap</li>
+                                <li class="list-group-item">Google Fonts</li>
+                                <li class="list-group-item">JavaScript</li>
+                                <li class="list-group-item">JQuery</li>
+                                <li class="list-group-item">Moment.js</li>
+                              </ul>
+                        </div>
+                        <div>
+                            <a href="https://github.com/falbanese7/fran-albanese-code-quiz" target="_blank" class="link-dark">
+                                <div class="align-center">
+                                    <img id="additional-projects-image" src="./assets/images/163688603-b255a837-ca7c-45df-b203-d9b87b55d0da.png" alt="Screenshot of Weather Dashboard Application"/>
+                                    <figcaption id="additional-projects-caption">Fran's Code Quiz</figcaption>
+                                </div>
+                            </a>
+                            <ul class="list-group custom-font">
+                                <li class="list-group-item">HTML5</li>
+                                <li class="list-group-item">CSS3</li>
+                                <li class="list-group-item">Bootstrap</li>
+                                <li class="list-group-item">JavaScript</li>
+                              </ul>
+                        </div>
+                    </figure>
         </section>
         <!-- Contact-Me -->
         <section class="contact">
@@ -91,14 +167,16 @@
                 </ul>
             </div>
         </section>
-     </main>
-    <footer> <pre id="heart"> Made with ❤️  by Francesco Albanese </pre></footer>
 
-    <script src="./JavaScript/script.js"></script>
+     </main>
+    <footer class="bg-dark"> <pre id="heart"> Made with ❤️  by Francesco Albanese </pre></footer>
+
+   
     <!-- Allows for the free use of social media icons -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./assets/JavaScript/script.js"></script>
 
   </body>
 
