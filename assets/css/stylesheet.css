@@ -156,6 +156,7 @@ h3 {
     max-width: 100%;
     display: flex;
     justify-content: center;
+    align-items: baseline;
     transition: transform .2s;
 }
 
@@ -163,9 +164,7 @@ h3 {
     width: 350px;
     margin: 30px;
     border-radius: 25px;
-    border: 10px;
-    border-style: solid;
-    border-color: var(--dark);
+    border: solid var(--dark) 10px;
     transition: transform .2s;
 }
 
@@ -254,7 +253,7 @@ pre {
         width: fit-content;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: baseline;
     }
     p {
         line-height: 2rem;
@@ -266,9 +265,6 @@ pre {
 @media screen and (max-width: 992px) {
     #featured-project-image {
         width: fit-content;
-        /* display: flex;
-        justify-content: center;
-        align-items: center; */
      }
 
     .additional-projects {
